@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1274px) {
+  .main .section__container .heading::before,
+  .main .section__container .heading::after {
+    display: none;
+  }
+  nav,
+  .buttons {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}/*# sourceMappingURL=media.css.map */

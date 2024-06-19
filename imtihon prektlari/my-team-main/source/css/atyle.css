@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&family=Quicksand&family=Roboto&display=swap");
+body {
+  font-family: "Livvic", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1110px;
+  padding: 0 20px;
+}
+
+.btn {
+  padding: 10px 33px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Livvic", sans-serif;
+  border-radius: 40px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #004047;
+  padding: 30px 0;
+}
+.header .header__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+.header .header__container nav {
+  flex-grow: 1;
+}
+.header .header__container nav .nav__list {
+  display: flex;
+  list-style: none;
+}
+.header .header__container nav .nav__list .nav__list__item {
+  margin-left: 15px;
+}
+.header .header__container nav .nav__list .nav__list__item a {
+  color: white;
+  text-decoration: none;
+}
+.header .header__container .buttons button {
+  cursor: pointer;
+  padding: 10px 33px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Livvic", sans-serif;
+  border-radius: 40px;
+  transition: all 0.4s;
+}
+.header .header__container button:hover {
+  background-color: white;
+  color: #000;
+}
+
+.menu {
+  display: none;
+}
+
+.menu__page {
+  margin-top: 10%;
+  width: 30%;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  background-color: white;
+}
+
+.main {
+  background-color: #004047;
+}
+.main .section__container {
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .section__container .heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: url(../images/left.png);
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+}
+.main .section__container .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -29px;
+  right: 0;
+  background: url(../images/bottom.png);
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 380px;
+}
+.main .section__container .heading h2 {
+  font-size: 100px;
+  color: white;
+  font-weight: bold;
+  line-height: 100px;
+}
+.main .section__container .heading h2 span {
+  color: #f67e7e;
+}
+.main .section__container .heading__text p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+  font-family: "Livvic", sans-serif;
+  color: white;
+  max-width: 500px;
+}
+.main .section__container .box__container {
+  padding: 50px 0;
+  max-width: 520px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3rem;
+}
+.main .section__container .box__container .box {
+  display: flex;
+  gap: 1rem;
+}
+.main .section__container .box__container .box .box__inner span {
+  color: #f67e7e;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+.main .section__container .box__container .box .box__inner p {
+  color: white;
+}
+.main .section__page2 {
+  background-color: #002529;
+  padding: 30px 0;
+  height: 80vh;
+}
+.main .section__page2 .inner__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .section__page2 .inner__container .heading h2 {
+  max-width: 445px;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 48px;
+}
+.main .section__page2 .inner__container .heading h2::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #f67e7e;
+}
+.main .section__page2 .box__container {
+  padding: 50px 0;
+  max-width: 520px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3rem;
+}
+.main .section__page2 .box__container .box {
+  display: flex;
+  gap: 1rem;
+}
+.main .section__page2 .box__container .box .box__inner span {
+  color: #f67e7e;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+.main .section__page2 .box__container .box .box__inner p {
+  color: white;
+}
+.main .section__manage3 {
+  margin: 50px 0;
+  padding: 0 0 50px;
+}
+.main .section__manage3 .inner__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+.main .section__manage3 .inner__container .heading h2 {
+  padding: 50px 0;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 48px;
+}
+.main .section__manage3 .inner__container .box__container {
+  color: white;
+  display: grid;
+  text-align: center;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.main .section__manage3 .inner__container .box__container .box .box__inner {
+  margin-bottom: 20px;
+}
+.main .section__manage3 .inner__container .box__container .box .box__inner p {
+  margin-bottom: 30px;
+}
+.main .section__manage3 .inner__container .box__container .box .box__inner .text__user h3 {
+  color: lightcoral;
+}
+.main .section__footer {
+  background-color: #f67e7e;
+  padding: 50px 0;
+}
+.main .section__footer .section__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .section__footer .section__content p {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 48px;
+}
+.main .section__footer .section__content .btn {
+  border: 2px solid black;
+  color: #000;
+}
+
+footer {
+  padding: 50px 0;
+  background-color: #000;
+  color: white;
+}
+footer .box__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .box__container .box nav .nav__list {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  list-style: none;
+}
+footer .box__container .box nav .nav__list a {
+  text-decoration: none;
+  color: white;
+  font-family: "Livvic", sans-serif;
+  font-size: 18px;
+}/*# sourceMappingURL=atyle.css.map */
